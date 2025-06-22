@@ -1,0 +1,166 @@
+/* Fuentes y cuerpo */
+body {
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;    
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #dc7633;
+    color: #F5F5F5;
+    text-align: center;
+    padding: 10px;
+}
+
+header img {
+    width: 50px;
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #F0F3F4;
+    font-weight: bold;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #F5F5F5;
+    font-weight: bold;
+}
+
+/* Estilos del pie de página */
+footer {
+    text-align: center;
+    color: white;
+    background-color: #dc7633;
+    padding: 10px;
+}
+
+/* Contenedor principal */
+.contenedor {
+    max-width: 1000px;
+    margin: 50px auto 50px; /* 50px de margen inferior */
+    padding: 40px 20px; /* Aumentar el padding superior e inferior */
+    border: 1px solid #ccc;
+}
+
+/* Estilos de las pestañas */
+.pestañas {
+    display: flex;
+}
+
+.pestaña {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.pestaña:hover {
+    background-color: #dc7633;
+}
+
+/* Contenido */
+.contenido {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.contenido:first-child {
+    display: block;
+}
+
+/* Iconos */
+.icono-mediano {
+    width: 40px;  
+    height: 40px; 
+    vertical-align: middle; 
+    margin-right: 10px; 
+}
+
+/* Estilos de acciones de usuario */
+.usuario-actions {
+    margin-bottom: 20px;
+}
+
+.form-inline {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.form-inline label {
+    margin-right: 10px;
+}
+
+.form-inline input[type="text"] {
+    margin-right: 10px;
+}
+
+/* Botones */
+.btn {
+    padding: 10px 15px;
+    margin-right: 10px;
+}
+
+.btn-primary {
+    background-color: #dc7633;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-info {
+    background-color: #dc7633;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilos de los botones de reporte */
+.reporte-buttons {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que los botones se ajusten en múltiples filas */
+    gap: 20px; /* Espacio entre los botones */
+    justify-content: center; /* Centrar los botones */
+    margin-top: 20px; /* Espacio superior */
+}
+
+.reporte-button {
+    background-color: #f9f9f9; /* Fondo de los botones */
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 20px; /* Padding interno */
+    text-align: center; /* Centrar texto */
+    width: 150px; /* Ancho fijo para todos los botones */
+    transition: background-color 0.3s; /* Efecto de transición */
+}
+
+.reporte-button:hover {
+    background-color: #dc7633; /* Cambiar color de fondo al pasar el mouse */
+    color: white; /* Cambiar color de texto al pasar el mouse */
+}
+
+.reporte-button a {
+    text-decoration: none; /* Quitar subrayado del enlace */
+    color: #000; /* Color del texto */
+    display: flex; /* Usar flexbox para alinear imagen y texto */
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+}

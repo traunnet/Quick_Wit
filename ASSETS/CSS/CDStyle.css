@@ -1,0 +1,109 @@
+/* General Styles */
+body {
+    display: flex; /* Mantiene el diseño flexible */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Contenedor principal para sidebar y contenido */
+.contenedor {
+    display: flex;
+    flex: 1; /* Asegura que el contenedor ocupe el espacio restante */
+}
+
+/* Sidebar */
+.barra-lateral {
+    width: 200px;
+    background-color: #dc7633;
+    color: white;
+    padding: 20px;
+    min-height: 100vh; /* Asegura que la barra lateral ocupe toda la altura de la ventana */
+}
+
+/* Logo en la barra lateral */
+.barra-lateral .logo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Estilos para la barra lateral */
+.barra-lateral nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.barra-lateral nav ul li {
+    margin: 10px 0;
+    margin-left: 10px; /* Espacio a la izquierda */
+}
+
+.barra-lateral nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 5px; /* Espaciado alrededor del texto */
+    display: inline-block; /* Para aplicar el borde como un botón */
+    border: 2px solid transparent; /* Borde inicial transparente para evitar movimiento */
+    transition: border-color 0.4s ease-in-out, background-color 0.4s ease-in-out; /* Transición más fluida */
+}
+
+.barra-lateral nav ul li a:hover {
+    color: white; /* Cambiar color de texto */
+    border-color: rgba(26, 25, 25, 0.87); /* Cambiar borde a negro al pasar el cursor */
+    border-radius: 15px; /* Bordes más redondeados */
+}
+
+/* Main Content */
+.contenido-principal {
+    flex: 1; /* Permite que el contenido principal ocupe el espacio restante */
+    background-color: #ecf0f1;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #dc7633;
+    padding: 10px 20px;
+    color: white;
+}
+
+.acciones-usuario {
+    display: flex;
+    align-items: center;
+}
+
+.icono-perfil {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* Contenido adicional */
+.contenido {
+    display: none;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+}
+
+.contenido:first-of-type {
+    display: block; /* Muestra la primera pestaña por defecto */
+}
+
+.usuario-actions {
+    margin-bottom: 20px;
+}
+
+.usuario-actions form {
+    display: inline-block;
+}
+
+.usuario-actions input,
+.usuario-actions button {
+    margin-right: 10px;
+}

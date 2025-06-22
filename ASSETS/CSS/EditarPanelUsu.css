@@ -1,0 +1,107 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para el encabezado */
+header {
+    flex-shrink: 0;
+    background-color: #dc7633;
+    color: #F5F5F5;
+    text-align: center;
+    padding: 10px;
+}
+
+header #logo {
+    width: 150px;
+}
+
+/* Contenedor principal */
+.contenedor {
+    flex: 1; /* Ocupa todo el espacio disponible */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra el contenido verticalmente */
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el título */
+h1 {
+    text-align: center;
+}
+
+/* Estilos para las tarjetas */
+.tarjeta {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+/* Estilos para la imagen del usuario */
+.cuerpo-tarjeta.media img {
+    width: 80px; /* Ajusta el tamaño de la imagen si es necesario */
+    height: 80px; /* Ajusta el tamaño de la imagen si es necesario */
+    border-radius: 50%;
+    border: 2px solid #ced4da; /* Añade un borde visible */
+    padding: 5px; /* Espaciado interno entre la imagen y el borde */
+}
+
+.media-cuerpo {
+    margin-left: 15px;
+}
+
+.texto-claro.pequeño {
+    color: #999;
+    font-size: 12px;
+}
+
+/* Estilos para formularios */
+.grupo-formulario {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.control-formulario {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+
+.etiqueta-formulario {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Estilos para el botón */
+.btn {
+    background-color: #DC7633;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #E29663;
+}
+
+/* Estilos para el pie de página */
+footer {
+    flex-shrink: 0;
+    background-color: #DC7633;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: auto;
+}

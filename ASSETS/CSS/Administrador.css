@@ -1,0 +1,136 @@
+/* Estilos Generales */
+body {
+    display: flex; /* Mantiene el diseño flexible */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.main {
+    margin-top: 20px;
+}
+
+main h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+main p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Contenedor principal para barra lateral y contenido */
+.contenedor-principal {
+    display: flex;
+    flex: 1; /* Asegura que el contenedor ocupe el espacio restante */
+}
+
+/* Barra Lateral */
+.barra-lateral {
+    width: 200px;
+    background-color: #dc7633;
+    color: white;
+    padding: 20px;
+    min-height: 100vh; /* Asegura que la barra lateral ocupe toda la altura de la ventana */
+}
+
+/* Logo en la barra lateral */
+.barra-lateral .logo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Estilos para la barra lateral */
+.barra-lateral nav ul { 
+    list-style: none;
+    padding: 0;
+}
+
+.barra-lateral nav ul li {
+    margin: 10px 0;
+    margin-left: 10px; /* Espacio a la izquierda */
+}
+
+.barra-lateral nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 5px; /* Espaciado alrededor del texto */
+    display: inline-block; /* Para aplicar el borde como un botón */
+    border: 2px solid transparent; /* Borde inicial transparente para evitar movimiento */
+    transition: border-color 0.4s ease-in-out, background-color 0.4s ease-in-out; /* Transición más fluida */
+}
+
+.barra-lateral nav ul li a:hover {
+    color: white; /* Cambiar color de texto */
+    border-color: rgba(26, 25, 25, 0.87); /* Cambiar borde a negro al pasar el cursor */
+    border-radius: 15px; /* Bordes más redondeados */
+}
+
+/* Contenido Principal */
+.contenido-principal {
+    flex: 1; /* Permite que el contenido principal ocupe el espacio restante */
+    background-color: #ecf0f1;
+    padding: 20px;
+}
+
+/* Cabecera */
+.cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #dc7633;
+    padding: 10px 20px;
+    color: white;
+}
+
+/* Acciones de usuario */
+.acciones-usuario {
+    display: flex;
+    align-items: center;
+}
+
+.icono-perfil {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* Menú en la barra lateral */
+.menu {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    margin: 20px 0;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav h3 {
+    margin: 15px 0 5px; /* Espaciado superior e inferior */
+    font-size: 18px; /* Tamaño de fuente */
+    color: #fff; /* Color de texto */
+}
+.btn {
+    background-color: transparent; /* Fondo transparente */
+    border: 2px solid rgb(0, 123, 255); /* Borde azul (puedes cambiar el color) */
+    color: rgb(0, 123, 255); /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave */
+}
+
+.btn:hover {
+    background-color: rgb(0, 123, 255); /* Fondo al pasar el mouse */
+    color: white; /* Cambia el color del texto al pasar el mouse */
+}
